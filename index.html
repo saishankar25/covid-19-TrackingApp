@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>Album example · Bootstrap v5.0</title>
+    <title>Covid-19 Tracking App</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
@@ -16,7 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
 
     <style>
         .bd-placeholder-img {
@@ -37,7 +38,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -47,14 +48,7 @@
                         <h4 class="text-white">About</h4>
                         <p class="text-muted">This is a simple covid 19 tracking web app</p>
                     </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -73,34 +67,48 @@
 
     <main>
 
+        
 
-        <div class="album py-5 bg-light">
+    </div>
+        
+        <div class="album py-5">
             <div class="container">
-            
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-
+                <div class="table-responsive">
+                <table class="table text-center table-lg table-responsive text-white">
+                    <thead class="p-1">
+                        <tr>
+                            <th scope="col" >#</th>
+                            <th scope="col" class="col-4">Country Name</th>
+                            <th scope="col" class="col-2 text-warning" onclick="sortTable(1)">Active Cases</th>
+                            <th scope="col" class="col-2 text-success" onclick="sortTable(2)">Recoveries</th>
+                            <th scope="col" class="col-2 text-danger">Deaths</th>
+                            <th scope="col" class="col-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        
+                        <!-- <tr>
+                            <th scope="row">1</th>
+                            <td>USA</td>
+                            <td>151894894</td>
+                            <td>4848484</td>
+                            <td>123</td>
+                        </tr> -->
+                    </tbody>
+                </table>
                 </div>
+               
 
 
 
             </div>
         </div>
-        </div>
+      
 
     </main>
 
 
-
+    <script src="script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
