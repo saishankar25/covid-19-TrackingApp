@@ -74,26 +74,22 @@
         <div class="album py-5">
             <div class="container">
                 <div class="table-responsive">
+                    <p class="text-secondary text-center">Click on column name to sort in descending order</p>
+                    <p class="text-secondary text-center">For specific country use ctrl+f to search</p>
                 <table class="table text-center table-lg table-responsive text-white">
                     <thead class="p-1">
                         <tr>
                             <th scope="col" >#</th>
                             <th scope="col" class="col-4">Country Name</th>
-                            <th scope="col" class="col-2 text-warning" onclick="sortTable(1)">Active Cases</th>
-                            <th scope="col" class="col-2 text-success" onclick="sortTable(2)">Recoveries</th>
-                            <th scope="col" class="col-2 text-danger">Deaths</th>
-                            <th scope="col" class="col-2">Total</th>
+                            <th scope="col" class="col-2 text-warning" onclick="sort(1)">Active Cases</th>
+                            <th scope="col" class="col-2 text-success" onclick="sort(2)">Recoveries</th>
+                            <th scope="col" class="col-2 text-danger" onclick="sort(3)">Deaths</th>
+                            <th scope="col" class="col-2" onclick="sort(4)">Total</th>
                         </tr>
                     </thead>
                     <tbody id="table">
                         
-                        <!-- <tr>
-                            <th scope="row">1</th>
-                            <td>USA</td>
-                            <td>151894894</td>
-                            <td>4848484</td>
-                            <td>123</td>
-                        </tr> -->
+                
                     </tbody>
                 </table>
                 </div>
