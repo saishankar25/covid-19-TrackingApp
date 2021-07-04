@@ -9,20 +9,23 @@
     <meta name="generator" content="Hugo 0.83.1">
     <title>Covid-19 Tracking App</title>
 
-        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
-  
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
     <style>
-        *{
-            font-family: 'Poppins', sans-serif;  
-                  }
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -50,10 +53,11 @@
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">About</h4>
                         <p class="text-muted">This is a simple covid 19 tracking web app</p>
-                        <p class="text-muted">Api used : <a href="https://disease.sh/docs/#/">https://disease.sh/docs/#/</a></p>
+                        <p class="text-muted">Api used : <a
+                                href="https://disease.sh/docs/#/">https://disease.sh/docs/#/</a></p>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -72,48 +76,55 @@
 
     <main>
 
-        
 
-    </div>
-        
+
+        </div>
+
         <div class="album py-5">
             <div class="container">
-                <div class="table-responsive">
-                    <p class="text-secondary text-center">Click on column name to sort in descending order</p>
+                <div class="container">
+                    <p class="text-secondary text-center">Click on column button to sort in descending order</p>
                     <p class="text-secondary text-center">For specific country use ctrl+f to search</p>
-                <table class="table text-center table-lg table-responsive text-white">
-                    <thead class="p-1">
-                        <tr>
-                            <th scope="col" >#</th>
-                            <th scope="col" class="col-4">Country Name</th>
-                            <th scope="col" class="col-2 text-warning" onclick="sort(1)">Active Cases</th>
-                            <th scope="col" class="col-2 text-success" onclick="sort(2)">Recoveries</th>
-                            <th scope="col" class="col-2 text-danger" onclick="sort(3)">Deaths</th>
-                            <th scope="col" class="col-2" onclick="sort(4)">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table">
-                        
-                
-                    </tbody>
-                </table>
                 </div>
-               
+                <div class="table-responsive">
+                    <table class="table text-center table-lg text-white">
+                        <thead class="p-1">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col" class="col-4">Country Name</th>
+                                <th scope="col" class="col-2"> <button class="btn btn-outline-warning"
+                                        onclick="sort(1)">Active Cases</button> </th>
+                                <th scope="col" class="col-2"> <button class="btn btn-outline-success"
+                                        onclick="sort(2)"> Recoveries</button> </th>
+                                <th scope="col" class="col-2"> <button class="btn btn-outline-danger"
+                                        onclick="sort(3)">Deaths</button></th>
+                                <th scope="col" class="col-2"> <button class="btn btn-outline-secondary"
+                                        onclick="sort(4)">Total</button></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+
 
 
 
             </div>
         </div>
-      
+
 
     </main>
 
 
     <script src="script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
